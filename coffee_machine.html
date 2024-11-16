@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <link rel="stylesheet" href="coffee_machine.css">
+</head>
+<body>
+    <img src="coffee.png" alt="Left Coffee Cup" class="coffee-cup left-cup">
+    <h1>Coffee Machine</h1> 
+    <img src="coffee.png" alt="Right Coffee Cup" class="coffee-cup right-cup">
+    <div id="display">Welcome! Select your coffee and insert coins.</div>
+    <div id="coffee-buttons">
+        <button onclick="selectCoffee('espresso')">Espresso - $2.00</button>
+        <button onclick="selectCoffee('latte')">Latte - $2.50</button>
+        <button onclick="selectCoffee('cappuccino')">Cappuccino - $3.00</button>
+    </div>
+
+    <div id="coin-form">
+        <h3>Insert Coins</h3>
+        <div class="coin-input-group">
+            <label>Quarters:</label>
+            <input type="number" id="quarters" min="0" max="20" value="0">
+        </div>
+        <div class="coin-input-group">
+            <label>Dimes:</label>
+            <input type="number" id="dimes" min="0" max="20" value="0">
+        </div>
+        <div class="coin-input-group">
+            <label>Nickels:</label>
+            <input type="number" id="nickels" min="0" max="20" value="0">
+        </div>
+        <div class="coin-input-group">
+            <label>Pennies:</label>
+            <input type="number" id="pennies" min="0" max="20" value="0">
+        </div>
+        <button onclick="insertCoins()">Insert Coins</button>
+    </div>
+    
+    <button id="show-report-button" onclick="showReport()">Show Report</button>
+
+    <script src="coffee_machine.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: burlywood;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: darkred;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.coffee-cup {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 110px;
+}
+
+.left-cup {
+    left: 70px;
+}
+
+.right-cup {
+    right: 20px;
+}
+
+#display {
+    border: 2px solid darkred;
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    color: darkred;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+#coffee-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#coffee-buttons button {
+    background-color: darkred;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+}
+
+#coffee-buttons button:hover {
+    background-color: darkgoldenrod;
+}
+
+#coin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#coin-form h3 {
+    color: darkred;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.coin-input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.coin-input-group label {
+    flex: 1;
+    font-size: 16px;
+}
+
+.coin-input-group input {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid darkred;
+    border-radius: 4px;
+    margin-left: 10px;
+    max-width: 80px;
+}
+
+button {
+    background-color: darkred;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+}
+
+#show-report-button {
+    background-color: darkblue;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#show-report-button:hover {
+    background-color: navy;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+    #coffee-buttons button, #show-report-button {
+        width: 100%;
+    }
+    #display, #coin-form, #show-report-button {
+        max-width: 100%;
+    }
+}
